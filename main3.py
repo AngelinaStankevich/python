@@ -21,7 +21,7 @@
 
 # str1 = input("Введите первую строку:")
 # str2 = input("Введите вторую строку:")
-# if set(str1) & set(str2):
+# if set(str1) == set(str2):
 #     print(True)
 # else:
 #     print(False)
@@ -31,7 +31,7 @@
 import random
 options = ["камень", "ножницы","бумага"]
 user_choice = input("Выберите камень, ножницы или бумага:")
-bot_choice = random.choice
+bot_choice = random.choice(options)
 
 if user_choice in options:
     if user_choice == bot_choice:
